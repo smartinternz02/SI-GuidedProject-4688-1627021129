@@ -1,0 +1,32 @@
+:root{
+	--light-shade: #dfb719;
+	--background-shade: #333438;
+	--dark-shade: #65666a;
+	--text-shade: white;
+	--font-family: "Monaco";
+	--font-size: 20px;
+}
+
+html, body{
+	height: 100%;
+}
+
+body{
+	margin:0;
+	padding: 0;
+	margin-left: 25%;
+	margin-right: 25%;
+	background-color: var(--background-shade);
+	font-family: var(--font-family);
+	color: var(--dark-shade);
+	font-size: var(--font-size);
+}
+
+.container{
+	margin-top: 5%;
+	display: flex;
+	flex-direction: column;
+	//justify-content: space-between;
+	/*background-color: white;*/
+	height: 90%;
+}
