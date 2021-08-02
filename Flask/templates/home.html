@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Network</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="static/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="static/css/content.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/content.css"> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+  <div id="particles-js" style="position:absolute;text-align:center;color:white;"></div>
+  <div id="particle2" style="position:absolute;text-align:center;color:white;"></div>
+  <div class="container">
+      <div class="navbar">
+      
+          <div class="nav-sub heading">Visa Approval Prediction</div>
+      </div>
+      <div class="content">
+      <br>
+      <!-- <span style="color:white;font-size:26;">Introduction</span> -->
+      <br>
+          <div class="about" 
+          style="color:black; background-color: var(--dark-shade); border-radius: 20px; padding: 15px;">
+          Over 2 Million visa petitions are filed by the employers each year and only 65000 petitions are approved. So, the goal is to explore the petitions filed and their outcomes for the past six years i.e., from 2011 to 2016, and to find a pattern to predict the outcome by using a predictive model developed using Machine Learning techniques.
+
+
+
+<br><br>IThe goal of the project is to predict the outcome of H-1B visa applications that are filed by many professional foreign nationals every year. Here, we framed the problem as a classification problem and applied it in order to output a predicted case status of the application. The input to our algorithm is the attributes of the applicant. H-1B is a type of non-immigrant visa in the United States that allows foreign nationals to work in occupations that require specialized knowledge and a bachelor’s degree or higher in the specific specialty. This visa requires the applicant to have a job offer from an employer in the US before they can file an application to the US immigration service (USCIS). We believe that this prediction algorithm could be a useful resource both for the future H-1B visa applicants and the employers who are considering sponsoring them.
+
+<br><br>In order to predict the case status of the applicants, we will be feeding the model with the dataset which contains the required fields by which the machine can classify the case status as certified or denied.
+</div>     
+<div class="heading" style="color:var(--light-shade);text-align:center;">Enter your details for the prediction</div>
+<br>
+<div class="about-form" 
+          style="color:black; background-color: var(--dark-shade); border-radius: 20px; padding: 15px;">
+          
+
+          <form action = "/" method = "post">
+            <p>SOC NAME</p>
+            <select name = "soc">
+            <option value = "it">It</option>
+            <option value = "finance">Finance</option>
+            <option value = "mechanical">Mechanical</option>
+            <option value = "audit">Audit</option>
+            <option value = "database">Database</option>
+            <option value = "scm">SCM</option>
+            <option value = "administrative">Administrative</option>
+            <option value = "pr">PR</option>
+            <option value = "manager">Manager</option>
+            <option value = "others">other</option>
+            </select>
+            
+            
+            <p>Do you have a full time position</p>
+            <select name = "pos">
+            <option value = "Y">Yes</option>
+            <option value = "N"> No</option>
+            </select>
+            
+            <p>Enter your wage</p>
+            <input type = "text" name = "wage" />
+            <p>Year</p>
+            <input type = "text" name = "year" />
+            <br>
+             <button  type = "submit" value = "submit" style="color:#f39c12;">PREDICT</button>
+              
+        </form>
+        <br>
+              
+              
+              
+              </div>
+              <br>
+              <b style="background-color: var(--dark-shade); border-radius: 20px; padding: 15px;color:var(--light-shade);text-align:center;">STATUS PREDICTED: {{value}}</b> 
+            <br><br>
+          </div>
+      </div>
+
+  </div>
+
+  <script src="../static/js/particles.js"></script>
+  <script src="../static/js/app.js"></script>
+</body>
+</html>
